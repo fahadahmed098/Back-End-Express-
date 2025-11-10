@@ -128,7 +128,7 @@ const sendEmail = async (req,res) => {
 
   let sendMailStatus= await transporter.sendMail({
     from: `"Verify Email" <${process.env.EMAIL_USER}>`,
-  to:req.body.        ,
+  to:req.body,
  subject: req.body.subject,
     html:`<!doctype html>
 <html lang='en'>
